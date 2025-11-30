@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets, cities } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -72,7 +73,7 @@ const Hero = () => {
 
             </div>
 
-
+                        <Link to={'/rooms'}>
             <button className='flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1' >
 
               <img src={assets.searchIcon} alt="searchIcon" className='h-7'/>
@@ -80,6 +81,7 @@ const Hero = () => {
                 <span>Search</span>
 
             </button>
+                        </Link>
 
         </form>
     </div>
